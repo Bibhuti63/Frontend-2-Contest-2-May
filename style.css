@@ -1,37 +1,69 @@
-.container {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-  }
+body{
+  background-color: black;
+  color: lightgray;
+  padding: 60px;
+  font-family: 'Inter', sans-serif;
   
-  h3 {
-    /* text-align: center; */
-  }
+}
+
+.div{
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+
+
+
+#dropdown{
+  font-size: 24px;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  margin: 10px 0px;
+}
+
+.btn{
   
-  .filters, .add-user {
-    margin-bottom: 20px;
-  }
+  font-size: 24px;
+  margin: 20px 0px;
+  padding: 15px 70px ;
+  margin-bottom: 100px;
+}
+
+
+
+.subdivclass{
+  display: flex;
+  font-size: 18px;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 15px 20px;
+  margin: 25px 0px;
+  justify-content: space-around;
+  width: 500px;
+}
+
+.add-user-section{
+  display: flex;
+  font-size: 18px;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.add{
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  background-color: black;
   
-  .filters select, .add-user select, .add-user input[type="text"] {
-    margin-right: 10px;
-  }
+  border-radius: 10px;
   
-  #user-list {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  .card {
-    border: 1px solid #ccc;
-    background-color: black;
-    border-radius: 5px;
-    padding: 5px;
-    margin: 2px;
-    flex: 1 0 400px;
-  }
-  body {
-    background-color: black;
-    /* border: 1px solid white; */
-    color: white;
-  }
-  
+}
+
+.input{
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  padding: 15px 20px;
+  margin: 15px 0px;
+  background-color: black;
+  color: lightgray;
+}

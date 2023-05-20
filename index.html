@@ -4,44 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>SignUp</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
+
     
-    <div class="container">
-        <h3>Filter UI Cards Via Their Profession</h3>
+    <div id="topdiv" class="div">Filter ui cards via their profession.</div>
+   
+    <!-- dropdown -->
+    <div>
+        <select name="drop" id="dropdown">
+            <option value="Profession" selected disabled>Profession</option>
+            <option value="Developer">Developer</option>
+            <option value="Admin">Admin</option>
+        </select>
+    </div>
 
-        <div class="filter">
-            <!-- <label for="profession">Profession:</label> -->
-            <select id="profession">
-                <option value="">Profession</option>
-                <option value="developer">Developer</option>
-                <option value="admin">Admin</option>
-            </select>
-
-            <div id="user-list">
-                <!-- userlist will be added dynamically -->
-            </div>
-
-            <button ondblclick="filterUsers()">Filter</button>
-        </div>
-
-        <div class="add-user">
-            <h3>Add a new user</h3>
-            <label for="name">Enter Name</label>
-            <input type="text" id="name">
-            <label for="profession">Enter Profession</label>
-            <input type="text" id="newProfession">
-            <label for="age">Enter Age</label>
-            <input type="text" id="age">
-
-            <button onclick="addUser()">Add User</button>
-
-        </div>
-        <div></div>
+    <!-- div where users data is displayed -->
+    <div id="display">
     </div>
     
+    <!-- filter button -->
+    <button class="btn" id="filterbtn" onclick="filterUsersByProfession()">Filter</button>
+
+    <!-- new user addition section -->
+    <div class="div">Add a new user</div>
+
+    <div class="add-user-section">
+        
+        <span class="add">
+            <label for="name">Enter Name</label>
+            <input class="input" type="text" id="name" >
+        </span>
+        <span class="add">
+            <label for="profession">Enter Profession</label>
+        <select class="input" id="newProfession">
+          <option value="" selected disabled>Select</option>
+          <option value="developer">Developer</option>
+          <option value="admin">Admin</option>
+        </select>
+        </span>
+        <span class="add">
+            <label for="age">Enter Age</label>
+            <input class="input" type="text" id="age" >
+        </span>
+        
+      </div>
+
+    <button class="btn" onclick="addUser()">Add User</button>
+
 
     <script src="./script.js"></script>
 </body>
